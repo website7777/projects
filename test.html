@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .countdown {
+    font-size: 48px;
+    text-align: center;
+    color: #333;
+  }
+
+  .message {
+    font-size: 24px;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .animation {
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  img{
+    width: 1000px;
+    height: 667px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <img onclick="web()" src="project/1.png" alt="Ваше изображение">
+  </div>
+
+  <button onclick="replaceBody()" class="download-button">Скачать</button>
+</div>
+
+
+<script>
+  function web() {
+    var count = 10;
+    var countdownElement = document.getElementById("countdown");
+    var messageElement = document.getElementById("message");
+
+    var countdownInterval = setInterval(function() {
+      count--;
+      countdownElement.innerText = count;
+      if (count === 0) {
+        clearInterval(countdownInterval);
+        window.location.href = 'https://website7777.github.io/projects/project_50';
+      }
+    }, 1000);
+  }
+
+  function replaceBody() {
+    document.body.innerHTML = `
+    <div class="container">
+      <div class="countdown animation" id="countdown">10</div>
+      <div class="message animation" id="message">Hello</div>
+    </div>`;
+    web();
+  }
+</script>
+</body>
+</html>
