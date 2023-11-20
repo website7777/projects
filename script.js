@@ -196,3 +196,11 @@ function fifty() {
     // Add your code for the forty-ninth function
     window.location.href = '50.html';
 }
+function fiftyOne() {
+    // Add your code for the forty-ninth function
+    window.location.href = '51.html';
+}
+function fiftyTwo() {
+    // Add your code for the forty-ninth function
+    window.location.href = '52.html';
+}
