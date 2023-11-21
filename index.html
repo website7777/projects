@@ -1,46 +1,106 @@
-<html lang="en">
-          <head>
-            <meta charset="utf-8">
-          
-            <title>Html Generated</title>
-            <meta name="description" content="Figma htmlGenerator">
-            <meta name="author" content="htmlGenerator">
-            
-            <link rel="stylesheet" href="styles.css">
-            
-            <style>
-              /*
-                Figma Background for illustrative/preview purposes only.
-                You can remove this style tag with no consequence
-              */
-              body {background: #282828; }
-              *{
-                margin: 0;
-                padding: 0;
-              }
-              html{
-                overflow: hidden;
-              }
-            </style>
-          
-          </head>
-          
-          <body>
-            <div class=e301_2><div class=e301_14><div  class="e301_7"></div><div onclick="one()"  class="e301_8"></div><div onclick='two()'  class="e301_10"></div><div onclick="three()"  class="e301_9"></div><div onclick="four()"  class="e301_11"></div><div onclick="four()"   class="e301_12"></div><div onclick="two()"  class="e301_13"></div></div></div>
-          
-          <script>
-            function one(params) {
-window.location.href = 'index.html'
-            }
-            function two(params) {
-window.location.href = ' skills.html'
-            }
-            function three(params) {
-window.location.href = ' portfolio.html'
-            }
-            function four(params) {
-window.location.href = ' contact me.html'
-            }
-          </script>
-          </body>
-          </html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблоны для сайтов</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html{
+            background-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #templates ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+
+        #templates ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        img {
+            height: 32px;
+            width: 48px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="skills.html">Шаблоны</a></li>
+                <li><a href="contact me.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>Привет, мы компания, которая предлагает готовые шаблоны для веб-сайтов!</h1>
+        <p>Наши шаблоны разнообразны и подходят для разных типов сайтов: от личных блогов до корпоративных порталов.</p>
+    </section>
+
+    <section id="templates">
+        <h2>Популярные шаблоны</h2>
+        <ul>
+            <li><a href="2.html"><img src="images/re_1(48).png" alt=""></a></li>
+            <li><a href="3.html"><img src="images/re_2(47).png" alt=""></a></li>
+            <li><a href="51.html"><img src="images/re_3(51).png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <p>Если у вас есть вопросы или вы хотите заказать шаблон, напишите нам на <a href="mailto:info@templatescompany.com">info@templatescompany.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Templates Company. Все права защищены.</p>
+    </footer>
+</body>
+</html>
